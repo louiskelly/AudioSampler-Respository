@@ -9,7 +9,16 @@
 	<div class="wrapper">
 	<div class="container">
 		
-		<div class="audiobutton" id="play1"></div>
+		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');" id="play1">
+			<div class="flipper">
+				<div class="front">
+					<p>This is the front</p>
+				</div>
+				<div class="back">
+					<p>This is the back</p>
+				</div>
+			</div>
+		</div>
 		<div class="audiobutton" id="play2"></div>
 		<div class="audiobutton" id="play3"></div>
 		<div class="audiobutton"></div>
@@ -80,15 +89,6 @@
 				newAudio3.pause()
 			}
 		}
-
-		function corners(){
-			$('.audiobutton').mouseleave
-				$(this).css('border-radius' , '0');
-				$(this).css('background-color' , 'darkred');
-
-			
-		}
-
 		// function pauseAudio(){
 
 		// 		newAudio.pause();
