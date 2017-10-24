@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Audio Sampler</title>
+	<link rel="stylesheet" href="audio.css">
+</head>
+<body>
+	<div class="wrapper">
+	<div class="container">
+		
+		<div class="audiobutton" id="play1"></div>
+		<div class="audiobutton" id="play2"></div>
+		<div class="audiobutton" id="play3"></div>
+		<div class="audiobutton"></div>
+		<div class="audiobutton"></div>
+		<div class="audiobutton"></div>
+		<div class="audiobutton"></div>
+		<div class="audiobutton"></div>
+		<div class="audiobutton"></div>
+
+	</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script>
+
+	init();
+
+		var createAudio = function(){
+
+			window.newAudio = new Audio();
+			newAudio.src = 'sounds/a.wav';
+
+			window.newAudio2 = new Audio();
+			newAudio2.src = 'sounds/b.wav';
+
+			window.newAudio3 = new Audio();
+			newAudio3.src = 'sounds/c.wav';
+
+		}();
+
+
+		function init(){
+
+			var playButton = document.getElementById('play1');
+			playButton.addEventListener('click', playAudio, false);
+
+			var playButton2 = document.getElementById('play2');
+			playButton2.addEventListener('click', playAudio2, false);
+
+			var playButton3 = document.getElementById('play3');
+			playButton3.addEventListener('click', playAudio3, false);
+
+			// var pauseButton = document.getElementById('pause');
+			// pauseButton.addEventListener('click', pauseAudio, false);
+
+		}
+
+		function playAudio(){
+			if (newAudio.paused){
+				newAudio.play()
+			} else {
+				newAudio.pause()
+			}
+		}
+
+		function playAudio2(){
+			if (newAudio2.paused){
+				newAudio2.play()
+			} else {
+				newAudio2.pause()
+			}
+		}
+
+		function playAudio3(){
+			if (newAudio3.paused){
+				newAudio3.play()
+			} else {
+				newAudio3.pause()
+			}
+		}
+
+		function corners(){
+			$('.audiobutton').mouseleave
+				$(this).css('border-radius' , '0');
+				$(this).css('background-color' , 'darkred');
+
+			
+		}
+
+		// function pauseAudio(){
+
+		// 		newAudio.pause();
+
+		// }
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.wrapper{
+	width: 420px;
+	height: 420px;
+	background-color: grey;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.container{
+	display: inline-block;
+	padding: 20px;
+	margin: 0 auto;
+	/*GRID*/
+	display: grid;
+	grid-template-columns: 100px 100px 100px;
+	grid-template-rows: 100px 100px 100px;
+	grid-gap: 40px;
+}
+
+.audiobutton{
+	border: 4px solid yellow;
+	cursor: pointer;
+	background-color: darkred;
+	width: 100%;
+	height: 100%;
+}
+
+.audiobutton:hover{
+	transition-duration: 1s;
+	background-color: orange;
+	border-radius: 45px;
+}

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button id="play">
+		Play
+	</button>
+
+	<button id="pause">
+		Pause
+	</button>
+
+	<script>
+
+
+		init();
+
+		var createAudio = function(){
+
+			window.newAudio = new Audio();
+			newAudio.src = 'frigia.mp3';
+
+		}();
+
+
+		function init(){
+
+			var playButton = document.getElementById('play');
+			playButton.addEventListener('click', playAudio, false);
+
+			var pauseButton = document.getElementById('pause');
+			pauseButton.addEventListener('click', pauseAudio, false);
+
+		}
+
+		function playAudio(){
+
+			if (newAudio.paused){
+				newAudio.play()
+
+			} else {
+				newAudio.pause()
+			}
+
+
+		}
+
+		function pauseAudio(){
+
+				newAudio.pause();
+
+			}
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
