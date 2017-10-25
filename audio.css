@@ -1,6 +1,11 @@
+body{
+	margin: 0;
+	background-color: #333333;
+}
+
 .wrapper{
 	width: 100%;
-	background-color: black;
+	background-color: #333333;
 	margin: auto;
 	text-align: center;
 	display: inline-block;
@@ -11,6 +16,7 @@
 	display: inline-block;
 	padding: 20px;
 	margin: auto;
+	margin-top: 80px;
 	/*GRID*/
 	display: grid;
 	grid-template-columns: 200px 200px 200px;
@@ -20,7 +26,7 @@
 
 .audiobutton{
 	cursor: pointer;
-	background-color: darkred;
+	/*background-color: darkred;*/
 	width: 100%;
 	height: 100%;
 	transition-duration: 1s;
@@ -73,4 +79,32 @@
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
+}
+
+
+.albumfront{
+	background-color: red;
+	height: 200px;
+}
+
+.albumback{
+	background-color: #D6EBC5;
+	height: 200px;
+}
+
+.albumimage{
+	width: 100%;
+	height: 100%;
+}
+
+.buttonplay{
+	margin-top: 35px;
+	border-radius: 90px;
+	background-color: #D6EBC5;
+}
+
+.songtitle{
+	padding-top: 10px;
+	font-family: sans-serif;
+	margin: 0;
 }

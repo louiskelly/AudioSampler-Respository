@@ -4,29 +4,107 @@
 	<meta charset="UTF-8">
 	<title>Audio Sampler</title>
 	<link rel="stylesheet" href="audio.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="wrapper">
 	<div class="container">
 		
-		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');" id="play1">
+		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
 				<div class="front">
-					<p>This is the front</p>
+					<div class="albumfront"><img class="albumimage" src="https://t6.rbxcdn.com/69a85997fd35c6d1b2691b19089b5289"></div>
 				</div>
 				<div class="back">
-					<p>This is the back</p>
+
+					<div class="albumback">
+						<h3 class="songtitle">Song name.mp3</h3>
+						<i class="buttonplay fa-5x fa fa-play" aria-hidden="true" id="play1"></i>
+
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="audiobutton" id="play2"></div>
-		<div class="audiobutton" id="play3"></div>
-		<div class="audiobutton"></div>
-		<div class="audiobutton"></div>
-		<div class="audiobutton"></div>
-		<div class="audiobutton"></div>
-		<div class="audiobutton"></div>
-		<div class="audiobutton"></div>
+		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');" id="play2">
+			<div class="flipper">
+				<div class="front">
+					<div class="albumfront">blue</div>
+				</div>
+				<div class="back">
+					<div class="albumback">this is red</div>
+				</div>
+			</div>
+		</div>
+		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');" id="play3">
+			<div class="flipper">
+				<div class="front">
+					<div class="albumfront">blue</div>
+				</div>
+				<div class="back">
+					<div class="albumback">this is red</div>
+				</div>
+			</div>
+		</div>
+		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');" id="play1">
+			<div class="flipper">
+				<div class="front">
+					<div class="albumfront">blue</div>
+				</div>
+				<div class="back">
+					<div class="albumback">this is red</div>
+				</div>
+			</div>
+		</div>
+		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');" id="play1">
+			<div class="flipper">
+				<div class="front">
+					<div class="albumfront">blue</div>
+				</div>
+				<div class="back">
+					<div class="albumback">this is red</div>
+				</div>
+			</div>
+		</div>
+		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');" id="play1">
+			<div class="flipper">
+				<div class="front">
+					<div class="albumfront">blue</div>
+				</div>
+				<div class="back">
+					<div class="albumback">this is red</div>
+				</div>
+			</div>
+		</div>
+		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');" id="play1">
+			<div class="flipper">
+				<div class="front">
+					<div class="albumfront">blue</div>
+				</div>
+				<div class="back">
+					<div class="albumback">this is red</div>
+				</div>
+			</div>
+		</div>
+		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');" id="play1">
+			<div class="flipper">
+				<div class="front">
+					<div class="albumfront">blue</div>
+				</div>
+				<div class="back">
+					<div class="albumback">this is red</div>
+				</div>
+			</div>
+		</div>
+		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');" id="play1">
+			<div class="flipper">
+				<div class="front">
+					<div class="albumfront">blue</div>
+				</div>
+				<div class="back">
+					<div class="albumback">this is red</div>
+				</div>
+			</div>
+		</div>
 
 	</div>
 	</div>
@@ -94,6 +172,17 @@
 		// 		newAudio.pause();
 
 		// }
+		$('.fa-play').click(function(){
+
+			$(this).addClass('fa-pause');
+			$(this).removeClass('fa-play');
+		})
+
+		$('.fa-pause').click(function(){
+
+			$(this).addClass('fa-play');
+			$(this).removeClass('fa-pause');
+		})
 
 	</script>
 </body>
