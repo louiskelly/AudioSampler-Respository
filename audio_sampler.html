@@ -157,13 +157,31 @@
 		var createAudio = function(){
 
 			window.newAudio = new Audio();
-			newAudio.src = 'sounds/a.wav';
+			newAudio.src = 'audio/bobbybrown.mp3';
 
 			window.newAudio2 = new Audio();
-			newAudio2.src = 'sounds/b.wav';
+			newAudio2.src = 'audio/earthwindfire.mp3';
 
 			window.newAudio3 = new Audio();
-			newAudio3.src = 'sounds/c.wav';
+			newAudio3.src = 'audio/hotchip.mp3';
+
+			window.newAudio4 = new Audio();
+			newAudio4.src = 'audio/lionelrichie.mp3';
+
+			window.newAudio5 = new Audio();
+			newAudio5.src = 'audio/nirvana.mp3';
+
+			window.newAudio6 = new Audio();
+			newAudio6.src = 'audio/pinkfloyd.mp3';
+
+			window.newAudio7 = new Audio();
+			newAudio7.src = 'audio/prince.mp3';
+
+			window.newAudio8 = new Audio();
+			newAudio8.src = 'audio/queen.mp3';
+
+			window.newAudio9 = new Audio();
+			newAudio9.src = 'audio/rickjames.mp3';
 
 		}();
 
@@ -178,6 +196,24 @@
 
 			var playButton3 = document.getElementById('play3');
 			playButton3.addEventListener('click', playAudio3, false);
+
+			var playButton4 = document.getElementById('play4');
+			playButton4.addEventListener('click', playAudio4, false);
+
+			var playButton5 = document.getElementById('play5');
+			playButton5.addEventListener('click', playAudio5, false);
+
+			var playButton6 = document.getElementById('play6');
+			playButton6.addEventListener('click', playAudio6, false);
+
+			var playButton7 = document.getElementById('play7');
+			playButton7.addEventListener('click', playAudio7, false);
+
+			var playButton8 = document.getElementById('play8');
+			playButton8.addEventListener('click', playAudio8, false);
+
+			var playButton9 = document.getElementById('play9');
+			playButton9.addEventListener('click', playAudio9, false);
 
 			// var pauseButton = document.getElementById('pause');
 			// pauseButton.addEventListener('click', pauseAudio, false);
@@ -207,6 +243,54 @@
 				newAudio3.pause()
 			}
 		}
+
+		function playAudio4(){
+			if (newAudio4.paused){
+				newAudio4.play()
+			} else {
+				newAudio4.pause()
+			}
+		}
+
+		function playAudio5(){
+			if (newAudio5.paused){
+				newAudio5.play()
+			} else {
+				newAudio5.pause()
+			}
+		}
+
+		function playAudio6(){
+			if (newAudio6.paused){
+				newAudio6.play()
+			} else {
+				newAudio6.pause()
+			}
+		}
+
+		function playAudio7(){
+			if (newAudio7.paused){
+				newAudio7.play()
+			} else {
+				newAudio7.pause()
+			}
+		}
+
+		function playAudio8(){
+			if (newAudio8.paused){
+				newAudio8.play()
+			} else {
+				newAudio8.pause()
+			}
+		}
+
+		function playAudio9(){
+			if (newAudio9.paused){
+				newAudio9.play()
+			} else {
+				newAudio9.pause()
+			}
+		}
 		// function pauseAudio(){
 
 		// 		newAudio.pause();
@@ -214,12 +298,14 @@
 		// }
 		$('.fa-play').click(function(){
 
+			console.log('apples');
 			$(this).addClass('fa-pause');
 			$(this).removeClass('fa-play');
 		})
 
 		$('.fa-pause').click(function(){
 
+			console.log('lemons');
 			$(this).addClass('fa-play');
 			$(this).removeClass('fa-pause');
 		})
