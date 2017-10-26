@@ -296,18 +296,10 @@
 		// 		newAudio.pause();
 
 		// }
-		$('.fa-play').click(function(){
+		$('.buttonplay').click(function(){
 
 			console.log('apples');
-			$(this).addClass('fa-pause');
-			$(this).removeClass('fa-play');
-		})
-
-		$('.fa-pause').click(function(){
-
-			console.log('lemons');
-			$(this).addClass('fa-play');
-			$(this).removeClass('fa-pause');
+			$(this).toggleClass('fa-play fa-pause');
 		})
 
 	</script>
